@@ -16,7 +16,7 @@ export default function Home() {
         const isCompleted = localStorage.getItem(item.chapter) ? true : false;
 
         if (isCompleted) i++
-        if (i > 14) goToFinal();
+        if (i > 14) router.push('/final');
 
         return {
           chapter: item.chapter,
@@ -26,11 +26,7 @@ export default function Home() {
     }
 
     mapAllTitles()
-  }, [])
-
-  const goToFinal = () => {
-    router.push('/final')
-  }
+  }, [titles, router])
 
   const resetLocalStorage = () => {
     setIsReseted(true);

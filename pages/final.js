@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
                 
                 <div style={{ display: 'flex', justifyContent: 'center', width: '100%', height: '300px', margin: '8px 0' }}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/03_pmUhibDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/03_pmUhibDI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </main>
         </div>

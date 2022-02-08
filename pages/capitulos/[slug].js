@@ -13,12 +13,12 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
             const isChapterCompleted = localStorage.getItem(chapter) ? true : false;
     
             if (isChapterCompleted) {
-                goToHome()
+                router.push('/')
             }
         }
 
         checkChapter()
-    }, [])
+    }, [chapter, router])
 
     const isValidPassword = (input, dist) => {
         return String(input).toLowerCase() === String(dist).toLowerCase()
@@ -78,7 +78,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
                         </div>
                     ) : (
                         <div style={{ display: 'flex', justifyContent: 'center', width: '100%', height: '300px', margin: '8px 0' }}>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OgyKVknMBOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OgyKVknMBOY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     )
                 }
