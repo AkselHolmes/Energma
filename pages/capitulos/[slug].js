@@ -70,7 +70,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
                     (
                         <div style={{ position: 'relative', width: '100%', height: '600px', margin: '8px 0' }}>
                             <Image
-                                src={`http:localhost:3000/api?img=${photo1}`}
+                                src={`https://energma-kfqgkvknb-akselholmes.vercel.app/${photo1}`}
                                 alt={chapter}
                                 layout="fill"
                                 objectFit='contain'
@@ -87,7 +87,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
                     (
                         <div style={{ position: 'relative', width: '100%', height: '600px', margin: '8px 0' }}>
                             <Image
-                                src={`http:localhost:3000/api?img=${photo2}`}
+                                src={`https://energma-kfqgkvknb-akselholmes.vercel.app/${photo2}`}
                                 alt={chapter}
                                 layout="fill"
                                 objectFit="contain"

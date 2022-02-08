@@ -49,7 +49,7 @@ export default function Home() {
 
                 <div style={{ position: 'relative', width: '100%', height: '600px', margin: '8px 0' }}>
                     <Image
-                        src={'http://localhost:3000/FINAL_DO_ENIGMA.jpg'}
+                        src={'https://energma-kfqgkvknb-akselholmes.vercel.app/FINAL_DO_ENIGMA.jpg'}
                         alt="final"
                         layout="fill"
                         objectFit='contain'

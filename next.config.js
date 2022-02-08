@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost'],
+    domains: ['energma-kfqgkvknb-akselholmes.vercel.app'],
   },
 }
