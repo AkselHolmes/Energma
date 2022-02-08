@@ -24,7 +24,8 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
         return String(input).toLowerCase() === String(dist).toLowerCase()
     }
 
-    const validate = () => {
+    const validate = (e) => {
+        e.preventDefault()
         const isValid = isValidPassword(inputPassword, password);
 
         if (isValid) {
@@ -52,7 +53,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
                     Capítulo {pageNumber}: {chapter}
                 </h1>
 
-                <div style={{ display: 'flex' }}>
+                <form style={{ display: 'flex' }} onSubmit={validate}>
                     <input 
                         onChange={(e) => setInputPassword(e.target.value)} 
                         value={inputPassword}
@@ -64,7 +65,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
                     >
                         Validar
                     </button>
-                </div>
+                </form>
                 
                 {photo1 !== '' ?
                     (
