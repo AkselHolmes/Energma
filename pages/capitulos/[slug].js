@@ -121,7 +121,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
         photo2: '',
         chapter: 'O primeiro caso', 
         text: '',
-        password: 'estudou em vermelho' 
+        password: 'estudo em vermelho' 
     },
     { 
         photo1: 'beatlejuice.jpg',
@@ -135,7 +135,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
         photo2: '',
         chapter: 'Quem se descreve, se limita?', 
         text: '',
-        password: 'chave' 
+        password: 'bem vindo' 
     },
     { 
         photo1: 'desenhos.png',
