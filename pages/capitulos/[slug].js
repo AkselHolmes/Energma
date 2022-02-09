@@ -135,7 +135,7 @@ export default function Home({ photo1, photo2, slug, chapter, text, password }) 
         photo1: 'qrcode_9950346_.png',
         photo2: '',
         chapter: 'Quem se descreve, se limita?', 
-        text: '',
+        text: 'Chave',
         password: 'bem vindo' 
     },
     { 
